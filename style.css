@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0f172a;
+  color: white;
+  font-family: "Bricolage Grotesque";
+}
+header{
+   position:sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+ 
+  background-color: #203568;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 5rem;
+  
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(255, 6, 6);
+  font-size: 1.02rem;
+}
+.left {
+  font-size: 1.2rem;
+}
+.sectionOne {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+.sectionOneLeft {
+  font-size: 3rem;
+  justify-content: center;
+  font-weight: 650;
+}
+.one-btn {
+  flex-wrap: wrap;
+  justify-content: center; /* center the row(s) */
+  align-items: center;
+  gap: 1rem;
+  margin: 30px 0;
+}
+.btn {
+  display: inline-flex; /* center text inside button */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 50px;
+  width: 200px;
+  background-color: #06163c;
+  margin: 10px 8px;
+  border-radius: 11px;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  font-family: "Bricolage Grotesque";
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 7, 52);
+}
+.sectionOne button a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.sectionOne > div {
+  width: 40%;
+}
+.sectionOneRight img {
+  width: 80%;
+  margin: 56px 0;
+  border-radius: 25px;
+}
+.sectionOneLeft span {
+  color: rgb(247, 255, 2);
+}
+.sectionTwo {
+  max-width: 90vw;
+  margin: 30px auto;
+}
+
+main hr {
+  border: none;
+  border-top: 2px solid rgba(137, 177, 251, 0.797);
+  width: 90%;
+  margin: 1.5rem auto;
+}
+.intro {
+  background-color: #041744;
+  padding: 20px 50px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.intro h3 {
+  color: bisque;
+  font-size: 1.5rem;
+}
+.intro p {
+  font-weight: lighter;
+  color: rgb(209, 208, 208);
+}
+.sectionThree {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: #041744;
+  margin: auto;
+  border-radius: 20px;
+  border: 1px solid white;
+  max-width: 90vw;
+}
+.skill {
+  background-color: #203568;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 30px;
+  width: 20rem;
+}
+.skill:hover {
+  background-color: #0277f4;
+  box-shadow: #376ce7;
+}
+.tool {
+  background-color: #203568;
+  border-radius: 15px;
+  padding: auto;
+  margin: 20px;
+  margin: 20px;
+  padding: 10px 30px;
+  width: 20rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+.tool:hover {
+  background-color: #0277f4;
+}
+
+.sectionThree h3 {
+  text-align: center;
+  color: bisque;
+  font-size: 1.5rem;
+}
+.icon1 {
+  margin: 20px auto;
+}
+.icon1 img {
+  width: 40px;
+  margin: 10px 10px;
+}
+.skill ul li {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin: 10px auto;
+}
+.icon2 img {
+  width: 40px;
+  margin: 10px 10px;
+}
+.tool ul li {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin: 10px auto;
+}
+
+.sectionFour {
+  background-color: #041744;
+  margin: 30px auto;
+  border-radius: 20px;
+  border: 1px solid white;
+  max-width: 90vw;
+}
+.sectionFour h3 {
+  text-align: center;
+  color: bisque;
+  font-size: 1.8rem;
+  margin: 10px auto;
+  font-weight: normal;
+}
+.projects {
+  display: grid;
+  /* align-items: center; */
+  justify-content: center;
+  grid-gap: 30px 30px;
+  padding: 1rem;
+  grid-template-columns: 25vw 25vw 25vw;
+  justify-content: center;
+  align-items: center;
+}
+.project1 {
+  /* max-width:25vw; */
+  border-radius: 25px;
+  background-color: rgb(22, 86, 86);
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden; /* clip children so rounded corners are preserved */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+}
+
+/* Make project buttons fit and respect parent's rounding */
+.project1 button {
+  margin: 10px 8px 0 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+}
+.project1 button a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.project-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+.project1 p {
+  margin: 10px auto;
+  font-weight: lighter;
+}
+#netflix-logo {
+  margin: 30px auto;
+}
+footer {
+  background-color: rgb(4, 32, 40);
+  margin: 50px 0 auto auto;
+  padding: 50px auto;
+}
+.footer-content {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 90vw;
+}
+.email {
+  display: flex;
+  color: rgb(89, 88, 88);
+  font-weight: lighter;
+  justify-content: center;
+  text-shadow: #041744;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+}
+.footernav ul li {
+  margin: 10px auto;
+  list-style: none;
+}
+.socialmedia ul li {
+  margin: 10px auto;
+  list-style: none;
+}
+.footernav ul li a {
+  text-decoration: none;
+  color: grey;
+}
+.socialmedia ul li a {
+  text-decoration: none;
+  color: grey;
+}
+.footer-icons {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.footer-icons img {
+  width: 30px;
+}
+.footernav ul li a:hover{
+color: red;
+}
+.socialmedia ul li a:hover{
+color: red;
+}
